@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #92c84e;
+    max-width: 1200px;
+    margin: 0 20px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.box .left {
+    width: 800px;
+    margin-right: 50px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.box .left h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.box .left p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.box .left input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: #e0e0e0;
+    transition: 0.3s ease-in-out;
+}
+
+.box .left input:hover {
+    background-color: #bebdbd;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
+}
+
+.box .left button {
+    background-color: #237a00;
+    color: aliceblue;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.box .left button:hover {
+    background-color: #1a5c00;
+}
+
+.box .right {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.box .right .result {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.box .right .resultSpan .valor {
+    color: #fff;
+    text-align: right;
+    font-size: 6rem;
+    margin-left: 20px;
+}
+
+.box .right .img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.box .right p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#resultado {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media(max-width: 880px) {
+    .box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box .right .img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .box .right p{
+        margin: 20px 30px;
+    }
+
+    .box .left h1 {
+        margin: 20px 0;
+    }
+
+    .box .left input {
+        width: 100%;
+    }
+
+    .box .left {
+        padding: 0 20px;
+        margin: 0 20px;
+    }
+}
