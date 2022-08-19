@@ -16,9 +16,9 @@
                     <div class="left">
                         <h1>Calcule seu IMC</h1>
                         <p><strong>Altura</strong></p>
-                        <input type="number" placeholder="Ex: 1.60" id="altura">
+                        <input type="number" placeholder="Ex: 1.60" id="altura" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==5) return false;">
                         <p><strong>Peso</strong></p>
-                        <input type="number" placeholder="Ex: 70 Kg" id="peso">
+                        <input type="number" placeholder="Ex: 60 Kg" id="peso" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
                         <button id="send" onclick="Calcular()">Calcular</button>
                     </div>
                     <div class="right">
