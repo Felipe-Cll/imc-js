@@ -11,26 +11,26 @@ function imc() {
         const resIMC = ( peso / (altura * altura)).toFixed(1);
 
         let classificacao = "";
-        let img = document.getElementById('img');
+        let png = document.getElementById('png');
 
         if ( resIMC < 18.5 ) {
             classificacao = 'abaixo do peso.';
-            img.src = '/assets/img/magro.png';
+            png.src = '../assets/png/magro.png';
             document.body.style.background = '#90dc90';
         }
         else if ( resIMC < 25 ) {
             classificacao = 'com peso ideal.';
-            img.src = '/assets/img/ideal.png';
+            png.src = '../assets/png/ideal.png';
             document.body.style.background = '#7acb26';
         }
         else if ( resIMC < 30 ) {
             classificacao = 'levemente acima do peso.';
-            img.src = '/assets/img/acimaPeso.png';
+            png.src = '../assets/png/acimaPeso.png';
             document.body.style.background = '#f28f79';
         }
         else if ( resIMC >= 30 ) {
             classificacao = 'com obesidade. Cuidado!';
-            img.src = '/assets/img/obeso.png';
+            png.src = '../assets/png/obeso.png';
             document.body.style.background = '#B22222';
         }
 
