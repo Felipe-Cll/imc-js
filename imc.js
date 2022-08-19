@@ -15,22 +15,22 @@ function imc() {
 
         if ( resIMC < 18.5 ) {
             classificacao = 'abaixo do peso.';
-            png.src = '../assets/png/magro.png';
+            png.src = 'assets/png/magro.png';
             document.body.style.background = '#90dc90';
         }
         else if ( resIMC < 25 ) {
             classificacao = 'com peso ideal.';
-            png.src = '../assets/png/ideal.png';
+            png.src = 'assets/png/ideal.png';
             document.body.style.background = '#7acb26';
         }
         else if ( resIMC < 30 ) {
             classificacao = 'levemente acima do peso.';
-            png.src = '../assets/png/acimaPeso.png';
+            png.src = 'assets/png/acimaPeso.png';
             document.body.style.background = '#f28f79';
         }
         else if ( resIMC >= 30 ) {
             classificacao = 'com obesidade. Cuidado!';
-            png.src = '../assets/png/obeso.png';
+            png.src = 'assets/png/obeso.png';
             document.body.style.background = '#B22222';
         }
 
