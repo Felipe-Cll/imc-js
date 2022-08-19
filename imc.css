@@ -7,10 +7,15 @@
     font-family: 'Rubik';
 }
 
+.responsive {
+    max-width: 1300px;
+    margin: auto;
+    padding: 190px 80px;
+}
+
 .container {
     display: flex;
     width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -19,23 +24,18 @@
     display: flex;
     align-items: center;
     background-color: #92c84e;
-    max-width: 1200px;
-    margin: 0 20px;
-    height: 600px;
+    height: 60vh;
     border-radius: 20px;
 }
 
 .box .left {
-    width: 800px;
-    margin-right: 50px;
-    margin-left: 20px;
-    max-width: 600px;
+    padding: 20px;
 }
 
 .box .left h1 {
     color: #fff;
-    font-size: 4rem;
-    margin-bottom: 60px;
+    font-size: 3rem;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -47,9 +47,9 @@
 
 .box .left input {
     width: 100%;
+    padding: 20px 15px;
     border-radius: 10px;
     border: none;
-    padding: 20px 15px;
     margin-bottom: 20px;
     font-size: 1.2rem;
     outline: none;
@@ -85,37 +85,32 @@ input[type=number]::-webkit-inner-spin-button {
 
 .box .right {
     width: 100%;
-    height: auto;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 20px;
 }
 
 .box .right .result {
     display: flex;
     align-items: center;
-    padding: 15px;
+}
+
+.box .right .result .img {
+    padding: 0 40px;
+}
+.box .right .resultSpan {
+    padding: 20px;
 }
 
 .box .right .resultSpan .valor {
     color: #fff;
     text-align: right;
     font-size: 6rem;
-    margin-left: 20px;
-}
-
-.box .right .img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
 }
 
 .box .right p {
     color: #fff;
     font-size: 1.4rem;
-    margin-bottom: 5px;
+    padding: 15px;
 }
 
 #resultado {
@@ -123,7 +118,12 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 2rem;
 }
 
-@media(max-width: 880px) {
+@media(max-width: 1040px) {
+    
+    .responsive {
+        padding: 80px 30px;
+    }
+    
     .box {
         flex-direction: column;
         height: auto;
@@ -139,10 +139,6 @@ input[type=number]::-webkit-inner-spin-button {
         margin: 10px;
     }
 
-    .box .right p{
-        margin: 20px 30px;
-    }
-
     .box .left h1 {
         margin: 20px 0;
     }
@@ -150,9 +146,15 @@ input[type=number]::-webkit-inner-spin-button {
     .box .left input {
         width: 100%;
     }
+}
 
-    .box .left {
-        padding: 0 20px;
-        margin: 0 20px;
+@media(max-width: 860px) {
+    
+    .result {
+        flex-direction: column;
+    }
+
+    .resultSpan {
+        order: -1;
     }
 }

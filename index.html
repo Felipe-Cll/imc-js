@@ -10,24 +10,26 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="box">
-                <div class="left">
-                    <h1>Calcule seu IMC</h1>
-                    <p>Altura</p>
-                    <input type="number" placeholder="Ex: 1.60" id="altura">
-                    <p>Peso</p>
-                    <input type="number" placeholder="Ex: 70 Kg" id="peso">
-                    <button id="send" onclick="Calcular()">Calcular</button>
-                </div>
-                <div class="right">
-                    <p>O índice de massa corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p>
-                    <div class="result">
-                        <img src="/assets/img/dieta.png" alt="" class="img" id="img">
-                        <div class="resultSpan" id="resultado">
-                            <span id="resultTxt" class="valor"></span>
-                            <br />
-                            <span id="resultGrau"></span>
+        <div class="responsive">
+            <div class="container">
+                <div class="box">
+                    <div class="left">
+                        <h1>Calcule seu IMC</h1>
+                        <p><strong>Altura</strong></p>
+                        <input type="number" placeholder="Ex: 1.60" id="altura">
+                        <p><strong>Peso</strong></p>
+                        <input type="number" placeholder="Ex: 70 Kg" id="peso">
+                        <button id="send" onclick="Calcular()">Calcular</button>
+                    </div>
+                    <div class="right">
+                        <p>O índice de massa corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p>
+                        <div class="result">
+                            <img src="/assets/img/dieta.png" alt="" class="img" id="img">
+                            <div class="resultSpan" id="resultado">
+                                <span id="resultTxt" class="valor"></span>
+                                <br />
+                                <span id="resultGrau"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
