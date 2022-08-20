@@ -6,8 +6,9 @@
 <h2>:books: Informações</h2>
 O objetivo do projeto foi utilizar o DOM (Document Object Model) em JavaScript para manipular os documentos quando o usuário escolhesse os valores. A animação foi inspirada na série Rick and Morty.
 <br/><br/>
-Site: https://felipe-cll.github.io/imc-js/
-
+<ul>
+  <li>Para acessar o site: clique em <a href="https://felipe-cll.github.io/imc-js/" target="_blank">IMC</a></li>
+</ul>
 <h2>:pushpin: Tecnologias</h2>
 <ul>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
