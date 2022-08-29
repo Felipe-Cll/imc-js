@@ -15,3 +15,6 @@ O objetivo do projeto foi utilizar o DOM (Document Object Model) em JavaScript p
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a></li>
 </ul>
+
+## :balance_scale: Licença
+Consulte o arquivo <a href="https://github.com/Felipe-Cll/imc-js/blob/master/LICENSE" target="_blank">LICENSE</a> para obter mais detalhes.
